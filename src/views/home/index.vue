@@ -45,7 +45,7 @@ export default {
 
 <style lang='less' scoped>
 #content-bigBox {
-  width: 1600px;
+  width: 1620px;
   margin: 0 auto;
   display: flex;
 }

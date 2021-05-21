@@ -297,8 +297,7 @@ export default {
 
 <style lang='less' scoped>
 #MiddleContent {
-  width: 800px;
-  height: 200px;
+  width: 820px;
   user-select: none;
   // 标题
   .title {
@@ -328,7 +327,7 @@ export default {
   }
   // 成交金额大盒子
   #TransactionAmount {
-    width: 770px;
+    width: 790px;
     height: 300px;
     margin: auto;
     margin-top: 10px;
@@ -368,7 +367,8 @@ export default {
   }
   // 商品列表
   #Product-list {
-    width: 770px;
+    width: 790px;
+    overflow: auto;
     border-radius: 25px;
     background: rgb(51, 64, 102);
     opacity: 0.8;
@@ -381,6 +381,20 @@ export default {
       color: #fff;
       border: none;
       cursor: default;
+      margin-bottom: 10px;
+    }
+    .el-table {
+      height: 340px;
+      overflow: auto;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #bebebe;
+      border-radius: 8px;
     }
     // 表头字体大小
     /deep/ .has-gutter {
