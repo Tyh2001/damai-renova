@@ -38,48 +38,69 @@
       <el-tag
         color="#7866fc"
         :hit="true"
-      >商品列表</el-tag>
+      >
+        商品列表
+      </el-tag>
 
+      <!-- 表格数据 -->
       <el-table
         :data="ProductList"
         style="width: 100%"
       >
+        <!-- 商品 -->
         <el-table-column
           label="商品"
-          width="50"
+          width="70"
         >
+          <template slot-scope="scope">
+            <el-image
+              style="width: 60px; height: 60px"
+              :src="scope.row.IconIng"
+              :fit="cover"
+            />
+          </template>
         </el-table-column>
+
+        <!-- 名称 -->
         <el-table-column
           prop="name"
           label="名称"
-          width="100"
-        >
-        </el-table-column>
+        />
+
+        <!-- 价格 -->
         <el-table-column
           prop="Price"
           label="价格"
-        >
-        </el-table-column>
+          width="85"
+        />
+
+        <!-- 商品点击率 -->
         <el-table-column
           prop="ClickRate"
           label="商品点击率"
-        >
-        </el-table-column>
+          width="85"
+        />
+
+        <!-- 成交订单数 -->
         <el-table-column
           prop="tranOK"
           label="成交订单数"
-        >
-        </el-table-column>
+          width="85"
+        />
+
+        <!-- 成交金额 -->
         <el-table-column
           prop="tranAmount"
           label="成交金额"
-        >
-        </el-table-column>
+          width="85"
+        />
+
+        <!-- 成交转化率 -->
         <el-table-column
           prop="ConversionRate"
           label="成交转化率"
-        >
-        </el-table-column>
+          width="85"
+        />
       </el-table>
     </div>
   </div>
@@ -137,6 +158,69 @@ export default {
       ],
       // 表格数据
       ProductList: [
+        {
+          IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
+          name: 'Renova 黑色组合黑色组合黑色组合', // 名称
+          Price: '￥79', // 价格
+          ClickRate: '100.00%', // 点击率
+          tranOK: '43', // 成交数
+          tranAmount: '￥22228', // 成交金额
+          ConversionRate: '1.55%' // 成交转换率
+        },
+        {
+          IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
+          name: 'Renova 黑色组合', // 名称
+          Price: '￥79', // 价格
+          ClickRate: '7.24%', // 点击率
+          tranOK: '43', // 成交数
+          tranAmount: '￥228', // 成交金额
+          ConversionRate: '1.55%' // 成交转换率
+        },
+        {
+          IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
+          name: 'Renova 黑色组合', // 名称
+          Price: '￥79', // 价格
+          ClickRate: '7.24%', // 点击率
+          tranOK: '43', // 成交数
+          tranAmount: '￥228', // 成交金额
+          ConversionRate: '1.55%' // 成交转换率
+        },
+        {
+          IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
+          name: 'Renova 黑色组合', // 名称
+          Price: '￥79', // 价格
+          ClickRate: '7.24%', // 点击率
+          tranOK: '43', // 成交数
+          tranAmount: '￥228', // 成交金额
+          ConversionRate: '1.55%' // 成交转换率
+        },
+        {
+          IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
+          name: 'Renova 黑色组合', // 名称
+          Price: '￥79', // 价格
+          ClickRate: '7.24%', // 点击率
+          tranOK: '43', // 成交数
+          tranAmount: '￥228', // 成交金额
+          ConversionRate: '1.55%' // 成交转换率
+        },
+        {
+          IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
+          name: 'Renova 黑色组合', // 名称
+          Price: '￥79', // 价格
+          ClickRate: '7.24%', // 点击率
+          tranOK: '43', // 成交数
+          tranAmount: '￥228', // 成交金额
+          ConversionRate: '1.55%' // 成交转换率
+        },
+        {
+          IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
+          name: 'Renova 黑色组合', // 名称
+          Price: '￥79', // 价格
+          ClickRate: '7.24%', // 点击率
+          tranOK: '43', // 成交数
+          tranAmount: '￥228', // 成交金额
+          ConversionRate: '1.55%' // 成交转换率
+        },
         {
           IconIng: 'https://www.hualigs.cn/image/608132a6c15b2.jpg', // 商品
           name: 'Renova 黑色组合', // 名称
@@ -213,7 +297,7 @@ export default {
 
 <style lang='less' scoped>
 #MiddleContent {
-  width: 700px;
+  width: 800px;
   height: 200px;
   // 标题
   .title {
@@ -243,7 +327,7 @@ export default {
   }
   // 成交金额大盒子
   #TransactionAmount {
-    width: 670px;
+    width: 770px;
     height: 300px;
     margin: auto;
     margin-top: 10px;
@@ -282,7 +366,7 @@ export default {
   }
   // 商品列表
   #Product-list {
-    width: 670px;
+    width: 770px;
     border-radius: 25px;
     background: rgb(51, 64, 102);
     opacity: 0.8;
@@ -295,6 +379,28 @@ export default {
       color: #fff;
       border: none;
       cursor: default;
+    }
+    // 表头字体大小
+    /deep/ .has-gutter {
+      .cell {
+        font-size: 12px;
+      }
+    }
+    // 移除表格背景色
+    /deep/ .el-table th,
+    /deep/ .el-table tr {
+      background: rgb(51, 64, 102) !important;
+    }
+    // 移除表格 hover 背景色
+    /deep/ .el-table__row:hover {
+      td {
+        background: none;
+      }
+    }
+    // 表格字体颜色
+    /deep/ .cell {
+      color: #fff;
+      text-align: center;
     }
   }
 }
