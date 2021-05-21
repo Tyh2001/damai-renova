@@ -297,7 +297,7 @@ export default {
 
 <style lang='less' scoped>
 #MiddleContent {
-  width: 820px;
+  width: 825px;
   user-select: none;
   // 标题
   .title {
@@ -327,7 +327,7 @@ export default {
   }
   // 成交金额大盒子
   #TransactionAmount {
-    width: 790px;
+    width: 795px;
     height: 300px;
     margin: auto;
     margin-top: 10px;
@@ -367,7 +367,7 @@ export default {
   }
   // 商品列表
   #Product-list {
-    width: 790px;
+    width: 795px;
     overflow: auto;
     border-radius: 25px;
     background: rgb(51, 64, 102);

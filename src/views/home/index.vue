@@ -45,8 +45,26 @@ export default {
 
 <style lang='less' scoped>
 #content-bigBox {
-  width: 1620px;
+  width: 1630px;
   margin: 0 auto;
   display: flex;
+}
+// 响应式
+@media (max-width: 1620px) {
+  #content-bigBox {
+    width: 820px;
+    margin: 0 auto;
+    position: relative;
+    #left-content {
+      position: absolute;
+      left: 5px;
+      top: 875px;
+    }
+    #right-content {
+      position: absolute;
+      right: 4px;
+      top: 875px;
+    }
+  }
 }
 </style>
