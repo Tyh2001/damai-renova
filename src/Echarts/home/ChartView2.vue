@@ -2,6 +2,7 @@
   <div id="ChartView2">
     <p class="ChartView-title">图表说明</p>
     <div id="main" ref="main"></div>
+    <p class="details">查看详情</p>
   </div>
 </template>
 
@@ -38,9 +39,6 @@ export default {
         textStyle: {
           color: '#fff'
         }
-      },
-      grid: {
-        top: 160
       },
       series: [
         {
@@ -86,8 +84,9 @@ export default {
 
 <style lang='less' scoped>
 #ChartView2 {
+  user-select: none;
   width: 400px;
-  height: 400px;
+  height: 420px;
   background: rgb(51, 64, 102);
   opacity: 0.8;
   border-radius: 20px;
@@ -101,6 +100,13 @@ export default {
   #main {
     width: 400px;
     height: 300px;
+  }
+  // 查看详情
+  .details {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="ChartView1">
+  <div id="ChartView4">
     <p class="ChartView-title">图表说明</p>
     <div id="main" ref="main"></div>
     <p class="details">查看详情</p>
@@ -7,22 +7,9 @@
 </template>
 
 <script>
-import * as echarts from 'echarts/core'
-import {
-  TitleComponent,
-  ToolboxComponent,
-  TooltipComponent,
-  GridComponent,
-  LegendComponent
-} from 'echarts/components'
-import { LineChart } from 'echarts/charts'
-import { CanvasRenderer } from 'echarts/renderers'
-
-echarts.use(
-  [TitleComponent, ToolboxComponent, TooltipComponent, GridComponent, LegendComponent, LineChart, CanvasRenderer]
-)
+import * as echarts from 'echarts'
 export default {
-  name: 'ChartView1',
+  name: 'ChartView4',
   components: {},
   props: {},
   data () {
@@ -34,27 +21,16 @@ export default {
   mounted () {
     const myChart = echarts.init(this.$refs.main)
     const option = {
-      tooltip: {
-        trigger: 'axis'
-      },
       legend: {
-        data: ['邮件营销', '联盟广告', '视频广告'],
+        data: ['数据1', '数据2', '数据3'],
         // 修改图例的字体颜色
         textStyle: {
           color: '#fff'
         }
       },
-      grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-      },
       xAxis: {
         type: 'category',
-        boundaryGap: false,
-        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-        // 修改坐标系字体颜色
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         axisLabel: {
           textStyle: {
             color: '#fff'
@@ -63,7 +39,6 @@ export default {
       },
       yAxis: {
         type: 'value',
-        // 修改坐标系字体颜色
         axisLabel: {
           textStyle: {
             color: '#fff'
@@ -72,22 +47,16 @@ export default {
       },
       series: [
         {
-          name: '邮件营销',
+          name: '数据1',
+          data: [820, 932, 901, 934, 1290, 1330, 1320],
           type: 'line',
-          stack: '总量',
-          data: [120, 132, 101, 134, 90, 230, 210]
+          smooth: true
         },
         {
-          name: '联盟广告',
+          name: '数据2',
+          data: [220, 182, 191, 234, 290, 330, 310],
           type: 'line',
-          stack: '总量',
-          data: [220, 182, 191, 234, 290, 330, 310]
-        },
-        {
-          name: '视频广告',
-          type: 'line',
-          stack: '总量',
-          data: [150, 232, 201, 154, 190, 330, 410]
+          smooth: true
         }
       ]
     }
@@ -99,13 +68,14 @@ export default {
 </script>
 
 <style lang='less' scoped>
-#ChartView1 {
+#ChartView4 {
   user-select: none;
   width: 400px;
   height: 420px;
   background: rgb(51, 64, 102);
   opacity: 0.8;
   border-radius: 20px;
+  margin-top: 15px;
   // 图表说明
   .ChartView-title {
     padding: 20px 0 20px 20px;

@@ -1,13 +1,19 @@
 <template>
   <div id="RightContent">
-    <h1>右边内容</h1>
+    <ChartView3 />
+    <ChartView4 />
   </div>
 </template>
 
 <script>
+import ChartView3 from '@/Echarts/home/ChartView3'
+import ChartView4 from '@/Echarts/home/ChartView4'
 export default {
   name: 'RightContent',
-  components: {},
+  components: {
+    ChartView3,
+    ChartView4
+  },
   props: {},
   data () {
     return {}
@@ -23,7 +29,6 @@ export default {
 <style lang='less' scoped>
 #RightContent {
   width: 400px;
-  height: 300px;
-  background: #fff;
+  margin-top: 20px;
 }
 </style>

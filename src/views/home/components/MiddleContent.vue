@@ -299,6 +299,7 @@ export default {
 #MiddleContent {
   width: 800px;
   height: 200px;
+  user-select: none;
   // 标题
   .title {
     text-align: center;
@@ -331,7 +332,7 @@ export default {
     height: 300px;
     margin: auto;
     margin-top: 10px;
-    background: rgb(100, 90, 255);
+    background: rgb(100, 90, 255) url('https://p1-ecda.byteimg.com/tos-cn-i-n15nrygpm8/4eb47b7377a26864bde6e1cd57ede4bf.svg~tplv-n15nrygpm8-image.image');
     border-radius: 25px;
     // 累计成交金额
     .Cumulative-title {
@@ -349,12 +350,13 @@ export default {
     }
     // 数据展示表格
     #dataTable {
-      width: 100%;
+      width: 700px;
+      margin: auto;
       margin-top: 20px;
       display: flex;
       flex-wrap: wrap;
       .dataTable-item {
-        width: 130px;
+        width: 140px;
         height: 70px;
         text-align: center;
         color: #fff;
