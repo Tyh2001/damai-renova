@@ -1,13 +1,19 @@
 <template>
   <div id="LeftContent">
-    <h1>左边内容</h1>
+    <ChartView1 />
+    <ChartView2 />
   </div>
 </template>
 
 <script>
+import ChartView1 from '@/Echarts/home/ChartView1'
+import ChartView2 from '@/Echarts/home/ChartView2'
 export default {
   name: 'LeftContent',
-  components: {},
+  components: {
+    ChartView1,
+    ChartView2
+  },
   props: {},
   data () {
     return {}
@@ -23,7 +29,6 @@ export default {
 <style lang='less' scoped>
 #LeftContent {
   width: 400px;
-  height: 300px;
-  background: skyblue;
+  margin-top: 20px;
 }
 </style>

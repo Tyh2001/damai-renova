@@ -56,7 +56,7 @@
             <el-image
               style="width: 60px; height: 60px"
               :src="scope.row.IconIng"
-              :fit="cover"
+              fit="cover"
             />
           </template>
         </el-table-column>
