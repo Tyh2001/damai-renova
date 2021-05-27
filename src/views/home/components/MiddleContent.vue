@@ -1,7 +1,7 @@
 <template>
   <div id="MiddleContent">
     <!-- 主标题 -->
-    <h1 class="title">杭州达买 Renova 抖音直播大数据</h1>
+    <h1 class="title">杭州达买 Renova 大数据</h1>
 
     <!-- 标题下方说明 -->
     <div class="title-explain">
