@@ -1,8 +1,17 @@
 import request from '../utils/request'
 
-export const getList = () => {
+// 获取颜色分类的销量数据
+export const getColorList = () => {
   return request({
     method: 'GET',
-    url: '/index/index/index'
+    url: '/color/index/index'
+  })
+}
+
+// 获取类型销量数据
+export const getTypeList = () => {
+  return request({
+    method: 'GET',
+    url: '/type/index/index'
   })
 }

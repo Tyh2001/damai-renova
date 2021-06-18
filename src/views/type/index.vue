@@ -9,7 +9,7 @@
 import Echarts1 from './conponents/Echarts1.vue'
 import Echarts2 from './conponents/Echarts2.vue'
 export default {
-  name: 'textIndex',
+  name: 'typeIndex',
   components: {
     Echarts1,
     Echarts2

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { getList } from '@/api/list'
+import { getColorList } from '@/api/list'
 import * as echarts from 'echarts'
 export default {
   name: '',
@@ -19,7 +19,7 @@ export default {
   computed: {},
   watch: {},
   created () {
-    this.loadgetList()
+    this.loadgetColorList()
   },
   mounted () {
     setTimeout(() => {
@@ -57,8 +57,8 @@ export default {
     }, 800)
   },
   methods: {
-    async loadgetList () {
-      const { data } = await getList()
+    async loadgetColorList () {
+      const { data } = await getColorList()
       const list = data[1]
       const content = data[0]
 
