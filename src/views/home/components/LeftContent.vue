@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import ChartView1 from '@/Echarts/home/ChartView1'
-import ChartView2 from '@/Echarts/home/ChartView2'
+import ChartView1 from './components/ChartView1'
+import ChartView2 from './components/ChartView2'
 export default {
   name: 'LeftContent',
   components: {
@@ -20,8 +20,8 @@ export default {
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created () { },
+  mounted () { },
   methods: {}
 }
 </script>

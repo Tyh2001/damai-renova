@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="width: 1200px; height: 600px" ref="main"></div>
+    <div style="height: 600px" ref="main"></div>
   </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
           }
         },
         title: {
-          text: 'Renova 纸巾颜色销量表',
+          text: 'Renova 纸巾品类销量表',
           left: 'center'
         },
         xAxis: {
@@ -51,7 +51,7 @@ export default {
         },
         series: [
           {
-            name: '123',
+            name: '',
             data: this.content,
             type: 'bar',
             showBackground: true,

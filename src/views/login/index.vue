@@ -1,7 +1,6 @@
 <template>
   <div id="loginIndex">
     <div id="login-box">
-
       <h2 class="login-title">登录</h2>
 
       <el-form :model="user">
@@ -14,12 +13,7 @@
         </el-form-item>
 
         <el-form-item>
-          <el-button
-            type="primary"
-            @click="onLogin"
-          >
-            立即登录
-          </el-button>
+          <el-button type="primary" @click="onLogin"> 立即登录 </el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -43,8 +37,8 @@ export default {
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created () { },
+  mounted () { },
   methods: {
     onLogin () {
       if (this.user.userName === 'damai' && this.user.userPass === '123456') {

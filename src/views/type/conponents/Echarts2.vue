@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="width: 1200px; height: 600px" ref="main"></div>
+    <div style="height: 600px" ref="main"></div>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
       const myChart = echarts.init(this.$refs.main)
       const option = {
         title: {
-          text: 'Renova 纸巾颜色销量表',
+          text: 'Renova 纸巾品类销量表',
           subtext: '',
           left: 'center'
         },
@@ -47,7 +47,7 @@ export default {
               itemStyle: {
                 shadowBlur: 10,
                 shadowOffsetX: 0,
-                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                shadowColor: '#000'
               }
             }
           }

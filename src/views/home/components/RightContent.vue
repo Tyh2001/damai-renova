@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import ChartView3 from '@/Echarts/home/ChartView3'
-import ChartView4 from '@/Echarts/home/ChartView4'
+import ChartView3 from './components/ChartView3'
+import ChartView4 from './components/ChartView4'
 export default {
   name: 'RightContent',
   components: {
@@ -20,8 +20,8 @@ export default {
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created () { },
+  mounted () { },
   methods: {}
 }
 </script>

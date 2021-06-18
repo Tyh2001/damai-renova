@@ -1,7 +1,6 @@
 <template>
   <div id="homeIndex">
     <div id="content-bigBox">
-
       <!-- 左边内容 -->
       <div id="left-content">
         <LeftContent />
@@ -37,13 +36,25 @@ export default {
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created () { },
+  mounted () { },
   methods: {}
 }
 </script>
 
 <style lang='less' scoped>
+#homeIndex {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("./images/新背景.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: auto;
+}
 #content-bigBox {
   width: 1630px;
   margin: 0 auto;

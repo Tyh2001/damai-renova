@@ -14,11 +14,25 @@ export default {
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created () { },
+  mounted () { },
   methods: {}
 }
 </script>
 
-<style lang='less' scoped>
+<style lang='less'>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body .el-table::before {
+  z-index: inherit;
+}
 </style>

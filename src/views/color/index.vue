@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Echarts1 from './conponents/Echarts1.vue'
-import Echarts2 from './conponents/Echarts2.vue'
+import Echarts1 from './conponents/Echarts1'
+import Echarts2 from './conponents/Echarts2'
 export default {
   name: 'colorIndex',
   components: {
