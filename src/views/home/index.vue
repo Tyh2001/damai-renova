@@ -49,10 +49,11 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("./images/新背景.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  // background: url("./images/新背景.jpg") no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // background-attachment: fixed;
+  background: #000;
   overflow: auto;
 }
 #content-bigBox {

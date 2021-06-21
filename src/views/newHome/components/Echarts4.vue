@@ -1,8 +1,7 @@
 <template>
-  <div id="ChartView2">
+  <dv-border-box-10>
     <div id="main" ref="main"></div>
-    <p class="details" @click="$router.push('/channel')">查看详情</p>
-  </div>
+  </dv-border-box-10>
 </template>
 
 <script>
@@ -64,26 +63,11 @@ export default {
 </script>
 
 <style lang='less' scoped>
-#ChartView2 {
-  user-select: none;
-  width: 400px;
-  height: 420px;
-  // background: rgba(51, 64, 102, 0.8);
-  background: rgba(190, 245, 255, 0.8);
-  border-radius: 20px;
-  margin-top: 15px;
-  padding: 52px 0;
-  box-sizing: border-box;
-  #main {
-    width: 400px;
-    height: 300px;
-  }
-  // 查看详情
-  .details {
-    color: #515a6e;
-    cursor: pointer;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
+#main {
+  height: 350px;
+}
+.dv-border-box-10 {
+  margin-top: 20px;
+  height: 350px;
 }
 </style>

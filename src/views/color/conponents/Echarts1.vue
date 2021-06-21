@@ -51,7 +51,7 @@ export default {
         },
         series: [
           {
-            name: '123',
+            name: '',
             data: this.content,
             type: 'bar',
             showBackground: true,

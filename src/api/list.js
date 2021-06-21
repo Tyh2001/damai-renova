@@ -31,3 +31,11 @@ export const getChannelList = () => {
     url: '/channel/index/index'
   })
 }
+
+// 获取折扣数据
+export const getDiscountList = () => {
+  return request({
+    method: 'GET',
+    url: '/discount/index/index'
+  })
+}
