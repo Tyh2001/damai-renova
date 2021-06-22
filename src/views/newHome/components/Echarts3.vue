@@ -30,7 +30,7 @@ export default {
           subtext: 'Renova 纸巾系列销量表',
           left: 'center',
           textStyle: {
-            color: '#515a6e'
+            color: '#fff'
           }
         },
         series: [
@@ -63,7 +63,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 800)
+    }, 1000)
   },
   methods: {
     async loadgetSeriesList () {

@@ -28,7 +28,11 @@ export default {
       const option = {
         title: {
           text: 'Renova 纸巾渠道销量表',
-          left: 'center'
+          subtext: 'Renova 纸巾渠道销量表',
+          left: 'center',
+          textStyle: {
+            color: '#fff'
+          }
         },
         xAxis: {
           type: 'category',
@@ -49,7 +53,7 @@ export default {
         }]
       }
       myChart.setOption(option)
-    }, 800)
+    }, 1000)
   },
   methods: {
     async loadgetChannelList () {

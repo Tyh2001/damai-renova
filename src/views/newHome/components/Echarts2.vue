@@ -30,7 +30,7 @@ export default {
           subtext: 'Renova 纸巾品类销量饼图',
           left: 'center',
           textStyle: {
-            color: '#515a6e'
+            color: '#fff'
           }
         },
         tooltip: {
@@ -53,7 +53,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 800)
+    }, 1000)
   },
   methods: {
     async loadgetTypeList () {

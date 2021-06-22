@@ -31,7 +31,7 @@ export default {
           left: 'center',
           subtext: 'Renova 纸巾颜色柱状图',
           textStyle: {
-            color: '#515a6e'
+            color: '#fff'
           }
         },
         xAxis: {
@@ -50,7 +50,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 800)
+    }, 1000)
   },
   methods: {
     async loadgetColorList () {
