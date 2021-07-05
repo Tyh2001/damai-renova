@@ -28,6 +28,8 @@ export default {
         title: {
           text: 'Renova 纸巾品类销量表',
           subtext: 'Renova 纸巾品类销量饼图',
+          link: '/#/type',
+          target: 'self',
           left: 'center',
           textStyle: {
             color: '#fff'
@@ -53,7 +55,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 1000)
+    }, 300)
   },
   methods: {
     async loadgetTypeList () {

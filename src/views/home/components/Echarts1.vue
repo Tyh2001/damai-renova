@@ -28,6 +28,8 @@ export default {
       const option = {
         title: {
           text: 'Renova 纸巾颜色销量表',
+          link: '/#/color',
+          target: 'self',
           left: 'center',
           subtext: 'Renova 纸巾颜色柱状图',
           textStyle: {
@@ -50,7 +52,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 1000)
+    }, 100)
   },
   methods: {
     async loadgetColorList () {

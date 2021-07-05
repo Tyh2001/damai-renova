@@ -84,7 +84,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 800)
+    }, 30000)
   },
   methods: {
     async loadgetColorList () {

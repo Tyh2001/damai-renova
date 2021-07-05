@@ -1,81 +1,113 @@
 <template>
-  <div id="homeIndex">
-    <div id="content-bigBox">
-      <!-- 左边内容 -->
-      <div id="left-content">
-        <LeftContent />
+  <div id="newHomeIndex">
+    <!-- 头部 -->
+    <!-- <Tyh-Menu backgroundColor="rgb(5, 15, 66)">
+      <h1 class="title">大数据可视化图表</h1>
+    </Tyh-Menu> -->
+
+    <!-- 内容部分 -->
+    <div id="content">
+      <!-- 左边 -->
+      <div id="content-left">
+        <Echarts1 />
+        <Echarts2 />
       </div>
 
-      <!-- 中间内容 -->
-      <div id="middle-content">
-        <MiddleContent />
+      <!-- 中间 -->
+      <div id="content-center">
+        <dv-border-box-11 title="累计销量">
+          <h1 class="sales">{{ CumulativeSales }}</h1>
+        </dv-border-box-11>
       </div>
 
-      <!-- 右边内容 -->
-      <div id="right-content">
-        <RightContent />
+      <!-- 右边 -->
+      <div id="content-right">
+        <Echarts3 />
+        <Echarts4 />
       </div>
     </div>
   </div>
 </template>
-
 <script>
-import LeftContent from './components/LeftContent'
-import MiddleContent from './components/MiddleContent'
-import RightContent from './components/RightContent'
+import Echarts1 from './components/Echarts1'
+import Echarts2 from './components/Echarts2'
+import Echarts3 from './components/Echarts3'
+import Echarts4 from './components/Echarts4'
+import { getColorList } from '@/api/list'
 export default {
   name: 'homeIndex',
   components: {
-    LeftContent,
-    MiddleContent,
-    RightContent
+    Echarts1,
+    Echarts2,
+    Echarts3,
+    Echarts4
   },
   props: {},
   data () {
-    return {}
+    return {
+      CumulativeSales: 0 // 销售总数
+    }
   },
   computed: {},
   watch: {},
-  created () { },
+  created () {
+    this.loadgetColorList()
+  },
   mounted () { },
-  methods: {}
+  methods: {
+    async loadgetColorList () {
+      const { data } = await getColorList()
+
+      let allNum = 0
+      data[0].forEach(item => {
+        allNum += item
+      })
+      this.CumulativeSales = allNum
+    }
+  }
 }
 </script>
 
 <style lang='less' scoped>
-#homeIndex {
+#newHomeIndex {
   position: fixed;
-  top: 0;
+  top: 60px;
   left: 0;
   right: 0;
   bottom: 0;
-  // background: url("./images/新背景.jpg") no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // background-attachment: fixed;
-  background: #000;
   overflow: auto;
-}
-#content-bigBox {
-  width: 1630px;
-  margin: 0 auto;
-  display: flex;
-}
-// 响应式
-@media (max-width: 1620px) {
-  #content-bigBox {
-    width: 820px;
-    margin: 0 auto;
-    position: relative;
-    #left-content {
-      position: absolute;
-      left: 5px;
-      top: 875px;
+  background-image: radial-gradient(rgb(19, 65, 182), rgb(35, 48, 80));
+  // 内容部分
+  #content {
+    width: 1600px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #content-left,
+    #content-right {
+      width: 500px;
+      height: 750px;
+      padding: 15px;
+      box-sizing: border-box;
     }
-    #right-content {
-      position: absolute;
-      right: 4px;
-      top: 875px;
+    #content-center {
+      width: 600px;
+      padding: 15px;
+      box-sizing: border-box;
+      height: 750px;
+      .dv-border-box-11 {
+        width: 100%;
+        height: 130px;
+        user-select: none;
+        .sales {
+          color: #fff;
+          text-align: center;
+          line-height: 170px;
+          font-size: 39px;
+        }
+      }
     }
   }
 }

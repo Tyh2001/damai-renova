@@ -6,9 +6,41 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: () => import('@/views/home')
+    path: '',
+    name: '',
+    component: () => import('@/views/layout'),
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        component: () => import('@/views/home')
+      },
+      {
+        path: '/color',
+        name: 'color',
+        component: () => import('@/views/color')
+      },
+      {
+        path: '/type',
+        name: 'type',
+        component: () => import('@/views/type')
+      },
+      {
+        path: '/series',
+        name: 'series',
+        component: () => import('@/views/series')
+      },
+      {
+        path: '/channel',
+        name: 'channel',
+        component: () => import('@/views/channel')
+      },
+      {
+        path: '/discount',
+        name: 'discount',
+        component: () => import('@/views/discount')
+      }
+    ]
   },
   {
     path: '/login',
@@ -16,34 +48,9 @@ const routes = [
     component: () => import('@/views/login')
   },
   {
-    path: '/color',
-    name: 'color',
-    component: () => import('@/views/color')
-  },
-  {
-    path: '/type',
-    name: 'type',
-    component: () => import('@/views/type')
-  },
-  {
-    path: '/series',
-    name: 'series',
-    component: () => import('@/views/series')
-  },
-  {
-    path: '/channel',
-    name: 'channel',
-    component: () => import('@/views/channel')
-  },
-  {
-    path: '/discount',
-    name: 'discount',
-    component: () => import('@/views/discount')
-  },
-  {
-    path: '/newHome',
-    name: 'newHome',
-    component: () => import('@/views/newHome')
+    path: '/oldHome',
+    name: 'oldHome',
+    component: () => import('@/views/oldHome')
   }
 ]
 

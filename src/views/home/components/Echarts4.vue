@@ -29,6 +29,8 @@ export default {
         title: {
           text: 'Renova 纸巾渠道销量表',
           subtext: 'Renova 纸巾渠道销量表',
+          link: '/#/channel',
+          target: 'self',
           left: 'center',
           textStyle: {
             color: '#fff'
@@ -53,7 +55,7 @@ export default {
         }]
       }
       myChart.setOption(option)
-    }, 1000)
+    }, 300)
   },
   methods: {
     async loadgetChannelList () {

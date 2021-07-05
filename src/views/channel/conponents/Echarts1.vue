@@ -84,7 +84,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 800)
+    }, 10000)
   },
   methods: {
     async loadgetChannelList () {

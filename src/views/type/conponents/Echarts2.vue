@@ -54,7 +54,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 800)
+    }, 20000)
   },
   methods: {
     async loadgetTypeList () {

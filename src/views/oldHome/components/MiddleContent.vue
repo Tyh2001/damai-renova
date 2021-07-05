@@ -1,7 +1,7 @@
 <template>
   <div id="MiddleContent">
     <!-- 主标题 -->
-    <h1 class="title">杭州达买 Renova 大数据</h1>
+    <h1 class="title">达买 Renova 大数据</h1>
 
     <!-- 成交金额大盒子 -->
     <div id="TransactionAmount">
@@ -25,12 +25,9 @@
 
     <!-- 商品列表 -->
     <div id="Product-list">
-      <!-- <el-tag color="#7866fc" :hit="true"> 商品列表 </el-tag> -->
       <Tyh-tag color="primary">商品列表</Tyh-tag>
 
-      <!-- 表格数据 -->
-      <el-table :data="ProductList" style="width: 100%">
-        <!-- 商品 -->
+      <!-- <el-table :data="ProductList" style="width: 100%">
         <el-table-column label="商品" width="70">
           <template slot-scope="scope">
             <el-image
@@ -41,18 +38,14 @@
           </template>
         </el-table-column>
 
-        <!-- 名称 -->
         <el-table-column prop="name" label="名称" />
 
-        <!-- 价格 -->
         <el-table-column prop="Price" label="价格" width="120" />
 
-        <!-- 成交订单数 -->
         <el-table-column prop="tranOK" label="成交订单数" width="120" />
 
-        <!-- 成交金额 -->
         <el-table-column prop="tranAmount" label="成交金额" width="120" />
-      </el-table>
+      </el-table> -->
     </div>
   </div>
 </template>
