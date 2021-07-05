@@ -54,23 +54,17 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 30000)
+    }, 1000)
   },
   methods: {
     async loadgetColorList () {
       const { data } = await getColorList()
-      const list = data[1]
-      const content = data[0]
-
-      const newArr = []
-      for (let i = 0; i < list.length; i++) {
-        const newObj = {}
-        newObj.value = content[i]
-        newObj.name = list[i]
-        newArr.push(newObj)
-
-        this.content = newArr
-      }
+      data.forEach(item => {
+        const obj = {}
+        obj.value = item.num
+        obj.name = item.list
+        this.content.push(obj)
+      })
     }
   }
 }

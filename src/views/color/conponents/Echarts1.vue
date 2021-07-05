@@ -84,13 +84,15 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 30000)
+    }, 1000)
   },
   methods: {
     async loadgetColorList () {
       const { data } = await getColorList()
-      this.list = data[1]
-      this.content = data[0]
+      data.forEach(item => {
+        this.list.push(item.list)
+        this.content.push(item.num)
+      })
     }
   }
 }

@@ -59,8 +59,8 @@ export default {
       const { data } = await getColorList()
 
       let allNum = 0
-      data[0].forEach(item => {
-        allNum += item
+      data.forEach(item => {
+        allNum += item.num
       })
       this.CumulativeSales = allNum
     }

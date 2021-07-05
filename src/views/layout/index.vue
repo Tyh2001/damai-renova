@@ -27,7 +27,9 @@
       <h1 class="title">大数据可视化图表</h1>
     </Tyh-Menu>
 
-    <router-view />
+    <div id="content">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -64,5 +66,8 @@ export default {
     font-size: 25px;
     margin-right: 40px;
   }
+}
+#content {
+  margin-top: 80px;
 }
 </style>

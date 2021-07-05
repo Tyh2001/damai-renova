@@ -4,7 +4,7 @@ import request from '../utils/request'
 export const getColorList = () => {
   return request({
     method: 'GET',
-    url: '/color/index/index'
+    url: '/color/index/color'
   })
 }
 
@@ -12,7 +12,7 @@ export const getColorList = () => {
 export const getTypeList = () => {
   return request({
     method: 'GET',
-    url: '/type/index/index'
+    url: '/type/index/type'
   })
 }
 
@@ -20,7 +20,7 @@ export const getTypeList = () => {
 export const getSeriesList = () => {
   return request({
     method: 'GET',
-    url: '/series/index/index'
+    url: '/series/index/series'
   })
 }
 
@@ -28,14 +28,14 @@ export const getSeriesList = () => {
 export const getChannelList = () => {
   return request({
     method: 'GET',
-    url: '/channel/index/index'
+    url: '/channel/index/channel'
   })
 }
 
 // 获取折扣数据
-export const getDiscountList = () => {
-  return request({
-    method: 'GET',
-    url: '/discount/index/index'
-  })
-}
+// export const getDiscountList = () => {
+//   return request({
+//     method: 'GET',
+//     url: '/discount/index/discount'
+//   })
+// }

@@ -84,14 +84,16 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 20000)
+    }, 1000)
   },
   methods: {
     async loadgetSeriesList () {
       const { data } = await getSeriesList()
 
-      this.list = data[1]
-      this.content = data[0]
+      data.forEach(item => {
+        this.list.push(item.list)
+        this.content.push(item.num)
+      })
     }
   }
 }

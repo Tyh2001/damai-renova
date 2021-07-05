@@ -84,14 +84,15 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 10000)
+    }, 1000)
   },
   methods: {
     async loadgetChannelList () {
       const { data } = await getChannelList()
-
-      this.list = data[1]
-      this.content = data[0]
+      data.forEach(item => {
+        this.list.push(item.list)
+        this.content.push(item.num)
+      })
     }
   }
 }

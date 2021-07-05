@@ -34,11 +34,6 @@ const routes = [
         path: '/channel',
         name: 'channel',
         component: () => import('@/views/channel')
-      },
-      {
-        path: '/discount',
-        name: 'discount',
-        component: () => import('@/views/discount')
       }
     ]
   },
