@@ -29,7 +29,7 @@ export default {
         title: {
           text: 'Renova 纸巾渠道销量表',
           subtext: 'Renova 纸巾渠道销量表',
-          link: '/#/channel',
+          link: 'https://www.infinitymcn.com/web/0705_renova_list/front_end/index.html#/channel',
           target: 'self',
           left: 'center',
           textStyle: {

@@ -28,7 +28,7 @@ export default {
       const option = {
         title: {
           text: 'Renova 纸巾颜色销量表',
-          link: '/#/color',
+          link: 'https://www.infinitymcn.com/web/0705_renova_list/front_end/index.html#/color',
           target: 'self',
           left: 'center',
           subtext: 'Renova 纸巾颜色柱状图',

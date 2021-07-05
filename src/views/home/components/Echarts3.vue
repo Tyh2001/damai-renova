@@ -28,7 +28,7 @@ export default {
         title: {
           text: 'Renova 纸巾系列销量表',
           subtext: 'Renova 纸巾系列销量表',
-          link: '/#/series',
+          link: 'https://www.infinitymcn.com/web/0705_renova_list/front_end/index.html#/series',
           target: 'self',
           left: 'center',
           textStyle: {
