@@ -1,6 +1,7 @@
 <template>
-  <dv-border-box-10>
+  <dv-border-box-10 id="charts">
     <div id="main" ref="main"></div>
+    <p @click="$router.push('/type')">查看更多</p>
   </dv-border-box-10>
 </template>
 
@@ -28,7 +29,6 @@ export default {
         title: {
           text: 'Renova 纸巾品类销量表',
           subtext: 'Renova 纸巾品类销量饼图',
-          link: 'https://www.infinitymcn.com/web/0705_renova_list/front_end/index.html#/type',
           target: 'self',
           left: 'center',
           textStyle: {
@@ -55,7 +55,7 @@ export default {
         ]
       }
       myChart.setOption(option)
-    }, 1000)
+    }, 2000)
   },
   methods: {
     async loadgetTypeList () {
@@ -78,5 +78,15 @@ export default {
 .dv-border-box-10 {
   margin-top: 20px;
   height: 350px;
+}
+#charts {
+  position: relative;
+  p {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+  }
 }
 </style>
