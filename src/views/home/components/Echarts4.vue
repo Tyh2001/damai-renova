@@ -1,7 +1,7 @@
 <template>
   <dv-border-box-10 id="charts">
     <div id="main" ref="main"></div>
-    <p @click="$router.push('/channel')">查看更多</p>
+    <p @click="$router.push('/channel')">查看详情</p>
   </dv-border-box-10>
 </template>
 

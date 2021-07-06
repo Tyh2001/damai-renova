@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import { getStorage } from '../utils/Tyh_getStorage'
 
 Vue.use(VueRouter)
 
@@ -36,34 +35,11 @@ const routes = [
         component: () => import('@/views/channel')
       }
     ]
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import('@/views/login')
-  },
-  {
-    path: '/oldHome',
-    name: 'oldHome',
-    component: () => import('@/views/oldHome')
   }
 ]
 
 const router = new VueRouter({
   routes
 })
-
-// router.beforeEach((to, from, next) => {
-//   const damai = getStorage('damai')
-//   if (to.path !== '/login') {
-//     if (damai) {
-//       next()
-//     } else {
-//       next('/login')
-//     }
-//     return
-//   }
-//   next()
-// })
 
 export default router
