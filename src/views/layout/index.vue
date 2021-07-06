@@ -15,7 +15,7 @@
           渠道表
         </Tyh-Menu-Item>
         <Tyh-Menu-Item url="/series">
-          <Tyh-icon icon="ttyh-ui-series-01" color="#fff" />
+          <Tyh-icon icon="tyh-ui-series-01" color="#fff" />
           系列表
         </Tyh-Menu-Item>
         <Tyh-Menu-Item url="/type">
