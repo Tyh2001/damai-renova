@@ -4,7 +4,7 @@
 
 **本地地址：** http://localhost/Renova_List/public/index.php
 
-**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/
+**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/Renova_List/public/index.php/
 
 ### 获取颜色销量
 
@@ -14,7 +14,7 @@
 
 **本地地址：** http://localhost/Renova_List/public/index.php/backstage/color/color
 
-**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/backstage/color/color
+**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/Renova_List/public/index.php/backstage/color/color
 
 ### 获取渠道销量
 
@@ -24,7 +24,7 @@
 
 **本地地址：** http://localhost/Renova_List/public/index.php/backstage/channel/channel
 
-**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/backstage/channel/channel
+**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/Renova_List/public/index.php/backstage/channel/channel
 
 ### 获取系列销量
 
@@ -34,7 +34,7 @@
 
 **本地地址：** http://localhost/Renova_List/public/index.php/backstage/series/series
 
-**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/backstage/series/serie
+**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/Renova_List/public/index.php/backstage/series/serie
 
 ### 获取品类销量
 
@@ -44,4 +44,4 @@
 
 **本地地址：** http://localhost/Renova_List/public/index.php/backstage/type/type
 
-**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/backstage/type/type
+**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/Renova_List/public/index.php/backstage/type/type
