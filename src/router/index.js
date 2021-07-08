@@ -6,7 +6,6 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '',
-    name: '',
     component: () => import('@/views/layout'),
     children: [
       {
@@ -35,6 +34,11 @@ const routes = [
         component: () => import('@/views/channel')
       }
     ]
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/login')
   }
 ]
 
