@@ -23,8 +23,8 @@ export default {
     this.loadgetSeriesList()
   },
   mounted () {
+    const myChart = echarts.init(this.$refs.main)
     setTimeout(() => {
-      const myChart = echarts.init(this.$refs.main)
       const option = {
         title: {
           text: 'Renova 纸巾系列销量表',

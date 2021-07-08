@@ -23,8 +23,8 @@ export default {
     this.loadgetChannelList()
   },
   mounted () {
+    const myChart = echarts.init(this.$refs.main)
     setTimeout(() => {
-      const myChart = echarts.init(this.$refs.main)
       const option = {
         label: {
           show: true, // 是否展示
@@ -36,6 +36,7 @@ export default {
         },
         title: {
           text: 'Renova 纸巾渠道销量表',
+          subtext: '全部销量表',
           left: 'center'
         },
         xAxis: {

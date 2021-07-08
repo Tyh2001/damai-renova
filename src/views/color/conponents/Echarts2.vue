@@ -22,12 +22,12 @@ export default {
     this.loadgetColorList()
   },
   mounted () {
+    const myChart = echarts.init(this.$refs.main)
     setTimeout(() => {
-      const myChart = echarts.init(this.$refs.main)
       const option = {
         title: {
           text: 'Renova 纸巾颜色销量表',
-          subtext: '',
+          subtext: '全部销量表',
           left: 'center'
         },
         tooltip: {
