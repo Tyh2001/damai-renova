@@ -65,4 +65,7 @@ VueRouter.prototype.push = function push (location) {
   return originalPush.call(this, location).catch(err => err)
 }
 
+// router.beforeEach((to, from, next) => {
+// })
+
 export default router

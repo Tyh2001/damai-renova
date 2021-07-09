@@ -1,13 +1,19 @@
-// import request from '../utils/request'
-import axios from 'axioe'
-
-const url = 'http://localhost/Renova_List/public/index.php'
+import request from '../utils/request'
 
 // 注册
-export const onRegister = params => {
-  return axios({
+export const getOnRegister = params => {
+  return request({
     method: 'GET',
-    url: `${url}/backstage/user/register`,
+    url: '/backstage/user/register',
+    params
+  })
+}
+
+// 登录
+export const getOnLogin = params => {
+  return request({
+    method: 'GET',
+    url: '/backstage/user/login',
     params
   })
 }

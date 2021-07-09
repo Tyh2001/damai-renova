@@ -2,7 +2,7 @@
   <div id="layoutIndex">
     <Tyh-Menu backgroundColor="rgb(5, 15, 66)">
       <h1 class="title" @click="$router.push('/')">
-        <img class="logo" src="../../../public/达买Logo.png" alt="" />
+        <img class="logo" src="./images/达买Logo.png" alt="" />
         大数据可视化图表
       </h1>
 
