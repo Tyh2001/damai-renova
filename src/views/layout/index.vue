@@ -13,6 +13,7 @@
           :url="list.url"
           :color="MenuListColor(list.url)"
         >
+          <Tyh-icon :icon="list.icon" :color="MenuListColor(list.url)" />
           {{ list.title }}
         </Tyh-Menu-Item>
       </div>
@@ -33,11 +34,11 @@ export default {
     return {
       // 导航栏选项表
       MenuList: [
-        { title: '首页', url: '/' },
-        { title: '颜色表', url: '/color' },
-        { title: '渠道表', url: '/channel' },
-        { title: '系列表', url: '/series' },
-        { title: '品类表', url: '/type' }
+        { icon: 'tyh-ui-home-01', title: '首页', url: '/' },
+        { icon: 'tyh-ui-color-01', title: '颜色表', url: '/color' },
+        { icon: 'tyh-ui-channel-01', title: '渠道表', url: '/channel' },
+        { icon: 'tyh-ui-series-01', title: '系列表', url: '/series' },
+        { icon: 'tyh-ui-type-01', title: '品类表', url: '/type' }
       ]
     }
   },
