@@ -34,7 +34,7 @@
 
 **本地地址：** http://localhost/Renova_List/public/index.php/backstage/series/series
 
-**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/Renova_List/public/index.php/backstage/series/serie
+**线上地址：** https://infinitymcn.com/web/0705_renova_list/back_end/Renova_List/public/index.php/backstage/series/series
 
 ### 获取品类销量
 
