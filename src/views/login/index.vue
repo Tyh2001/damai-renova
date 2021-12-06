@@ -38,8 +38,6 @@
 import { getOnLogin } from '@/api/user'
 export default {
   name: 'loginIndex',
-  components: {},
-  props: {},
   data () {
     return {
       prohibit: false,
@@ -49,10 +47,6 @@ export default {
       }
     }
   },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // 登录
     async subonLogin () {

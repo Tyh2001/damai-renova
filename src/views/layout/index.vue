@@ -27,9 +27,6 @@
 
 <script>
 export default {
-  name: '',
-  components: {},
-  props: {},
   data () {
     return {
       // 导航栏选项表
@@ -42,10 +39,6 @@ export default {
       ]
     }
   },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     MenuListColor (url) {
       return this.$route.path === url

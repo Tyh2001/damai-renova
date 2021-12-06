@@ -8,17 +8,12 @@
 import { getColorList } from '@/api/list'
 import * as echarts from 'echarts'
 export default {
-  name: '',
-  components: {},
-  props: {},
   data () {
     return {
       list: [], // 描述文字
       content: [] // 数据
     }
   },
-  computed: {},
-  watch: {},
   created () {
     this.loadgetColorList()
   },

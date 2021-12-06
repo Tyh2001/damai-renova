@@ -8,17 +8,12 @@
 import * as echarts from 'echarts'
 import { getTypeList } from '@/api/list'
 export default {
-  name: '',
-  components: {},
-  props: {},
   data () {
     return {
       list: [], // 描述文字
       content: [] // 数据
     }
   },
-  computed: {},
-  watch: {},
   created () {
     this.loadgetTypeList()
   },

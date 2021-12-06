@@ -8,17 +8,12 @@
 import * as echarts from 'echarts'
 import { getSeriesList } from '@/api/list'
 export default {
-  name: '',
-  components: {},
-  props: {},
   data () {
     return {
       list: [], // 描述文字
       content: [] // 数据
     }
   },
-  computed: {},
-  watch: {},
   created () {
     this.loadgetSeriesList()
   },

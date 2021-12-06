@@ -14,16 +14,7 @@ export default {
   components: {
     Echarts1,
     Echarts2
-  },
-  props: {},
-  data () {
-    return {}
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

@@ -37,14 +37,11 @@ export default {
     Echarts3,
     Echarts4
   },
-  props: {},
   data () {
     return {
       CumulativeSales: 0 // 销售总数
     }
   },
-  computed: {},
-  watch: {},
   created () {
     this.loadgetColorList()
   },
